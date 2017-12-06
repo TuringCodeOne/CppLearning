@@ -14,7 +14,7 @@ int CoutPrime(int xx[], int m)
 void main()
 {
 	int xx[99], m, i;
-	printf("ÇëÊäÈëÒ»¸ö´óÓÚ1µÄÕûÊı ");
+	printf("è¯·è¾“å…¥å¤§ä¸€1çš„æ•´æ•° ");
 	scanf_s("%d", &m);
 	for (i = 0; i < CoutPrime(xx, m); i++)
 		printf("%d ", xx[i]);
