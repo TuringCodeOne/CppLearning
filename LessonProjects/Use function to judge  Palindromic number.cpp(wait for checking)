@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+#define M 10
+bool JudgeArray(char array[])
+{
+	char Reverse[M];
+	int length;
+	char *p;
+	
+	p = array;
+	length = strlen(array) - 1;
+	for (; p <array + strlen(array) - 1; p++, length--)
+		Reverse[length] = *p;
+
+	if (strcmp(array, Reverse) == 0)
+		return true;
+	else
+		return false;
+}
+
+int mian()
+{
+	char array[M];
+	gets_s(array);
+	if (JudgeArray(array))
+		printf("is Palindrome string");
+	else
+		printf("is not a Palindrome string");
+	return 0;
+}
