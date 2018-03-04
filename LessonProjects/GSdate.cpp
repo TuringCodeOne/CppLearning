@@ -43,7 +43,7 @@ int main()
 	
 	if (day_num <= 245) {
 		day_num += 120;
-		pri_date(year_num, day_num, false);
+		pri_date(--year_num, day_num, false);
 	}
 	else day_num -= 245;
 	
