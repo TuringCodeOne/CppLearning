@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream
 int fun(int x, int *pp)
 {
 	int t;
