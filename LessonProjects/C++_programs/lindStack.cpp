@@ -8,7 +8,7 @@ using namespace std;
 
 
 
-/**          ��ջ�ڵ�  LinkNode  ģ�嶨��        **/
+/**         链栈结点定义  LinkNode         **/
 template<typename T> struct LinkNode
 {
 	T data;
@@ -16,18 +16,18 @@ template<typename T> struct LinkNode
 };
 
 
-/**           ջ���ඨ��                    **/
+/**           链栈类模板定义                   **/
 template<class T> class Stack
 {
 public:
 	Stack() :top(NULL) {}
 	~Stack();
-	void Push(T x);          //��ջ
-	T Pop();           //��ջ
-	bool isEmpty();                   //�ж�ջ��
+	void Push(T x);          //入栈
+	T Pop();           //出栈
+	bool isEmpty();                   //判断栈空
 	T top() const;
 private:
-	LinkNode<T> *top;                  //ջ��ָ��
+	LinkNode<T> *top;                  //栈顶指针
 
 
 };
@@ -35,7 +35,7 @@ private:
 template<class T> Stack<T>::~Stack()
 {
 	LinkNode<T> *ptr = NULL;
-	while (top != NULL)     //ѭ���ͷ�ջ�ڵ�ռ�  
+	while (top != NULL)     
 	{
 		ptr = top->next;
 		delete top;
