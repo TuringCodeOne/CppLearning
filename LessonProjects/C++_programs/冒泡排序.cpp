@@ -25,7 +25,6 @@ int main()
 
 	// 用户输入n个数字
 	for (long i = 0; i < n; i++) {
-		printf_s("请输入第%d个数：", i + 1);
 		scanf_s("%d", &p[i]);
 	}
 
